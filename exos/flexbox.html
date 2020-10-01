@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practice CSS Layout</title>
+    <style>
+        body {
+            font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        nav {
+            background: purple;
+            height: 50px;
+        }
+        li{
+            display: inline;
+        }
+        li a {
+            text-decoration: none;
+            /* padding: 15px; */
+            float: right;
+            /* margin-right: 20px; */
+        }
+        li span {
+            float: right;
+        }
+        .flex-container {
+            display: inline-block;
+            width: 200px;
+
+        }
+        .flex-items {
+            border: 1px solid black;
+            background: pink;
+            text-align: center;
+            height: 100px;
+        }
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+        }
+        p {
+            line-height: 1.5rem;
+            background: aqua;
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <span>GC</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="flex-container">
+        <div class="flex-items item1">1</div>
+        <div class="flex-items item2">2</div>
+        <div class="flex-items item3">3</div>
+        <div class="flex-items item4">4</div>
+    </div>
+    <h1>CSS layouts with Flex & Grid</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus laudantium nam vel optio dolor assumenda amet aliquam et nihil est quas iusto tenetur voluptas perspiciatis totam eligendi, debitis labore mollitia!Lorem Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur in minus molestias accusantium ab provident incidunt? Esse vel voluptate ipsa, veniam libero corrupti ab expedita ad cupiditate in odio sunt!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ullam cupiditate. Cumque consequuntur deleniti eaque est a minima nulla impedit quia voluptatibus adipisci, accusantium nesciunt autem eius animi, voluptas labore.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus laudantium nam vel optio dolor assumenda amet aliquam et nihil est quas iusto tenetur voluptas perspiciatis totam eligendi, debitis labore mollitia!Lorem
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus laudantium nam vel optio dolor assumenda amet aliquam et nihil est quas iusto tenetur voluptas perspiciatis totam eligendi, debitis labore mollitia!Lorem</p>
 </body>
 </html>
